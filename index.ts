@@ -4,8 +4,8 @@ import * as fs from 'fs';
 
 const LINKEDIN_EMAIL = process.env.EMAIL;
 const LINKEDIN_PASSWORD = process.env.PASSWORD;
-const LINKEDIN_TEXT = "Bonjour, vous venez de gagner 25.00€.\n\nCeci est un post automatique indiquant que Paul n'as pas fait son exercice quotidien Leetcode.\nPour le punir, les 5 premieres personnes qui commentent avec leur compte Paypal recevront 5.00€.\n\nQue voulez-vous, à chacun sa méthode pour respecter ses résolutions...";
-const LEETCODE_USER = 'Mortufac';
+const LINKEDIN_TEXT = process.env.LINKEDIN_TEXT || "Bonjour, vous venez de gagner 25.00€.\n\nCeci est un post automatique indiquant que Paul n'as pas fait son exercice quotidien Leetcode.\nPour le punir, les 5 premieres personnes qui commentent avec leur compte Paypal recevront 5.00€.\n\nQue voulez-vous, à chacun sa méthode pour respecter ses résolutions...";
+const LEETCODE_USER = process.env.LEETCODE_USER || 'Mortufac';
 
 const delay = (milliseconds:number) => new Promise(r => setTimeout(r, milliseconds));
 
