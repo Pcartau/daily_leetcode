@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name   : "Ycombinator",
+    name   : "Daily leetcode",
     script : "ts-node",
     args: './index.ts',
     env_production: {
